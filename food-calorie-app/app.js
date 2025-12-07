@@ -25,7 +25,7 @@ async function init() {
 
         // 2. Try to load custom model
         console.log('Loading custom model...');
-        model = await tf.loadLayersModel('model/model.json');
+        model = await tf.loadLayersModel('model/model.json?v=' + new Date().getTime());
         isCustomModel = true;
         console.log('Custom Food101 model loaded successfully.');
     } catch (e) {
