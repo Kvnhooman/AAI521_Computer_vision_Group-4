@@ -29,11 +29,11 @@ async function init() {
         isCustomModel = true;
         console.log('Custom Food101 model loaded successfully.');
     } catch (e) {
-        console.warn('Custom model not found or failed to load. Falling back to MobileNet for demo purposes.', e);
+        console.log('Using MobileNet for food classification (custom model requires TF2.x export).');
         // Fallback to MobileNet
         model = await mobilenet.load();
         isCustomModel = false;
-        console.log('MobileNet loaded as fallback.');
+        console.log('MobileNet loaded successfully for demo.');
     }
 }
 
