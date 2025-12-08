@@ -1,0 +1,14 @@
+[build]
+  # This tells Netlify that your website files are in this folder
+  publish = "food-calorie-app"
+
+# (Optional) Basic caching headers for better performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/model/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
