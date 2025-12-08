@@ -1,7 +1,7 @@
 # Food Detection — 50-Class (MobileNetV2 vs EfficientNetB0)
 
-> **Project**
->  <img width="1860" height="108" alt="image" src="https://github.com/user-attachments/assets/ad86d0f3-ed8f-46d3-b9e2-5f44ba872872" />
+## **Project**
+<img width="1860" height="108" alt="image" src="https://github.com/user-attachments/assets/ad86d0f3-ed8f-46d3-b9e2-5f44ba872872" />
 
 ---
 
@@ -54,18 +54,13 @@ repo-root/
 │  │  ├─ classes.json
 │  │  ├─ group1-shard1of1.bin  # (example names)
 │  │  └─ model.json
+│  ├─ .gitignore
+│  ├─ README.md
 │  ├─ index.html
-│  ├─ app.js
+│  ├─ netlify.toml
+│  ├─ script.js
 │  ├─ style.css
-│  └─ README.md
-├─ Team4_FinalProject.ipynb    # Colab notebook: training, eval, visualizations
-├─ data/                       # (not committed) dataset pointers or metadata
-├─ outputs/                    # Saved model weights, visualizations, JSONs
-│  ├─ final_model_50class.keras
-│  ├─ final_model_50class_efficientnet.keras
-│  ├─ nutrition_database.json
-│  └─ *.png (plots)
-├─ model_comparison.json
+├─ AAI521_team4_FinalProject.ipynb    # Colab notebook: training, eval, visualizations
 ├─ README.md                   # <- This file
 └─ LICENSE
 ```
@@ -138,11 +133,11 @@ python -m http.server 8000
 
 ## Files of interest
 
-* `Team4_FinalProject.ipynb` — main notebook (data loading, training, visualization, model saving).
+* `AAI521_team4_FinalProject.ipynb` — main notebook (data loading, training, visualization, model saving).
 * `food-calorie-app/` — static demo app to test models in the browser.
 * `outputs/` — saved models, visualizations, JSONs (created after training).
 * `nutrition_database.json` — the lookup table used to display nutrition per 100 g.
-* `model_comparison.json` — final comparison between MobileNetV2 and EfficientNetB0.
+* `model.json` — final comparison between MobileNetV2 and EfficientNetB0.
 
 ---
 
@@ -248,8 +243,13 @@ When reporting numbers in the README or presentation, always include the exact c
 
 ## Licensing & Credits
 
-* Dataset: Food-101 by Bossard et al. (refer to dataset page for license terms).
-* Code & models: [Your Team / Organization] — include a `LICENSE` file in the repo (MIT recommended for student projects unless otherwise required).
+* **Dataset:** [Food-101 on Kaggle](https://www.kaggle.com/datasets/kmader/food41) — originally by Bossard et al.  
+  Please refer to the dataset page for license terms and usage guidelines.
+
+* **Code & Models:** Developed by [Team4/ Applied AI CV Course @USD].  
+  This repository is released under the **MIT License** — see the included `LICENSE` file for details.  
+  MIT License allows you to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, with proper attribution.
+
 
 ---
 
