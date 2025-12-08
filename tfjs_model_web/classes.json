@@ -1,0 +1,408 @@
+{
+  "classes": [
+    "pizza",
+    "hamburger",
+    "sushi",
+    "ice_cream",
+    "french_fries",
+    "donuts",
+    "apple_pie",
+    "chocolate_cake",
+    "hot_dog",
+    "pancakes",
+    "tacos",
+    "spaghetti_bolognese",
+    "chicken_wings",
+    "fried_rice",
+    "nachos",
+    "waffles",
+    "grilled_cheese_sandwich",
+    "lasagna",
+    "macaroni_and_cheese",
+    "cheesecake",
+    "tiramisu",
+    "french_toast",
+    "omelette",
+    "eggs_benedict",
+    "caesar_salad",
+    "greek_salad",
+    "caprese_salad",
+    "clam_chowder",
+    "miso_soup",
+    "ramen",
+    "pad_thai",
+    "spring_rolls",
+    "samosa",
+    "gyoza",
+    "dumplings",
+    "beef_tartare",
+    "ceviche",
+    "bruschetta",
+    "hummus",
+    "guacamole",
+    "fish_and_chips",
+    "chicken_curry",
+    "steak",
+    "pork_chop",
+    "lobster_bisque",
+    "scallops",
+    "oysters",
+    "red_velvet_cake",
+    "carrot_cake",
+    "bread_pudding"
+  ],
+  "calories": {
+    "pizza": 266,
+    "hamburger": 354,
+    "sushi": 143,
+    "ice_cream": 207,
+    "french_fries": 312,
+    "donuts": 269,
+    "apple_pie": 237,
+    "chocolate_cake": 352,
+    "hot_dog": 290,
+    "pancakes": 227,
+    "tacos": 226,
+    "spaghetti_bolognese": 350,
+    "chicken_wings": 290,
+    "fried_rice": 228,
+    "nachos": 346,
+    "waffles": 291,
+    "grilled_cheese_sandwich": 440,
+    "lasagna": 378,
+    "macaroni_and_cheese": 320,
+    "cheesecake": 321,
+    "tiramisu": 240,
+    "french_toast": 220,
+    "omelette": 154,
+    "eggs_benedict": 450,
+    "caesar_salad": 184,
+    "greek_salad": 106,
+    "caprese_salad": 108,
+    "clam_chowder": 236,
+    "miso_soup": 40,
+    "ramen": 436,
+    "pad_thai": 380,
+    "spring_rolls": 140,
+    "samosa": 262,
+    "gyoza": 64,
+    "dumplings": 41,
+    "beef_tartare": 180,
+    "ceviche": 120,
+    "bruschetta": 109,
+    "hummus": 166,
+    "guacamole": 150,
+    "fish_and_chips": 585,
+    "chicken_curry": 250,
+    "steak": 271,
+    "pork_chop": 231,
+    "lobster_bisque": 200,
+    "scallops": 137,
+    "oysters": 68,
+    "red_velvet_cake": 478,
+    "carrot_cake": 435,
+    "bread_pudding": 310
+  },
+  "nutrition": {
+    "pizza": {
+      "calories": 266,
+      "protein": 11,
+      "fat": 10,
+      "carbs": 33
+    },
+    "hamburger": {
+      "calories": 354,
+      "protein": 17,
+      "fat": 17,
+      "carbs": 35
+    },
+    "sushi": {
+      "calories": 143,
+      "protein": 6,
+      "fat": 4,
+      "carbs": 21
+    },
+    "ice_cream": {
+      "calories": 207,
+      "protein": 4,
+      "fat": 11,
+      "carbs": 24
+    },
+    "french_fries": {
+      "calories": 312,
+      "protein": 4,
+      "fat": 15,
+      "carbs": 41
+    },
+    "donuts": {
+      "calories": 269,
+      "protein": 4,
+      "fat": 13,
+      "carbs": 33
+    },
+    "apple_pie": {
+      "calories": 237,
+      "protein": 2,
+      "fat": 11,
+      "carbs": 34
+    },
+    "chocolate_cake": {
+      "calories": 352,
+      "protein": 5,
+      "fat": 14,
+      "carbs": 52
+    },
+    "hot_dog": {
+      "calories": 290,
+      "protein": 10,
+      "fat": 18,
+      "carbs": 22
+    },
+    "pancakes": {
+      "calories": 227,
+      "protein": 6,
+      "fat": 10,
+      "carbs": 28
+    },
+    "tacos": {
+      "calories": 226,
+      "protein": 10,
+      "fat": 12,
+      "carbs": 20
+    },
+    "spaghetti_bolognese": {
+      "calories": 350,
+      "protein": 12,
+      "fat": 14,
+      "carbs": 45
+    },
+    "chicken_wings": {
+      "calories": 290,
+      "protein": 23,
+      "fat": 19,
+      "carbs": 5
+    },
+    "fried_rice": {
+      "calories": 228,
+      "protein": 4,
+      "fat": 11,
+      "carbs": 29
+    },
+    "nachos": {
+      "calories": 346,
+      "protein": 7,
+      "fat": 19,
+      "carbs": 36
+    },
+    "waffles": {
+      "calories": 291,
+      "protein": 6,
+      "fat": 13,
+      "carbs": 37
+    },
+    "grilled_cheese_sandwich": {
+      "calories": 440,
+      "protein": 18,
+      "fat": 26,
+      "carbs": 33
+    },
+    "lasagna": {
+      "calories": 378,
+      "protein": 15,
+      "fat": 18,
+      "carbs": 38
+    },
+    "macaroni_and_cheese": {
+      "calories": 320,
+      "protein": 11,
+      "fat": 15,
+      "carbs": 36
+    },
+    "cheesecake": {
+      "calories": 321,
+      "protein": 6,
+      "fat": 23,
+      "carbs": 26
+    },
+    "tiramisu": {
+      "calories": 240,
+      "protein": 5,
+      "fat": 13,
+      "carbs": 26
+    },
+    "french_toast": {
+      "calories": 220,
+      "protein": 8,
+      "fat": 10,
+      "carbs": 25
+    },
+    "omelette": {
+      "calories": 154,
+      "protein": 11,
+      "fat": 12,
+      "carbs": 1
+    },
+    "eggs_benedict": {
+      "calories": 450,
+      "protein": 18,
+      "fat": 32,
+      "carbs": 20
+    },
+    "caesar_salad": {
+      "calories": 184,
+      "protein": 8,
+      "fat": 14,
+      "carbs": 6
+    },
+    "greek_salad": {
+      "calories": 106,
+      "protein": 3,
+      "fat": 8,
+      "carbs": 6
+    },
+    "caprese_salad": {
+      "calories": 108,
+      "protein": 6,
+      "fat": 7,
+      "carbs": 4
+    },
+    "clam_chowder": {
+      "calories": 236,
+      "protein": 8,
+      "fat": 17,
+      "carbs": 14
+    },
+    "miso_soup": {
+      "calories": 40,
+      "protein": 2,
+      "fat": 1,
+      "carbs": 5
+    },
+    "ramen": {
+      "calories": 436,
+      "protein": 13,
+      "fat": 16,
+      "carbs": 59
+    },
+    "pad_thai": {
+      "calories": 380,
+      "protein": 12,
+      "fat": 14,
+      "carbs": 50
+    },
+    "spring_rolls": {
+      "calories": 140,
+      "protein": 4,
+      "fat": 5,
+      "carbs": 20
+    },
+    "samosa": {
+      "calories": 262,
+      "protein": 5,
+      "fat": 16,
+      "carbs": 25
+    },
+    "gyoza": {
+      "calories": 64,
+      "protein": 3,
+      "fat": 2,
+      "carbs": 8
+    },
+    "dumplings": {
+      "calories": 41,
+      "protein": 2,
+      "fat": 1,
+      "carbs": 6
+    },
+    "beef_tartare": {
+      "calories": 180,
+      "protein": 20,
+      "fat": 11,
+      "carbs": 0
+    },
+    "ceviche": {
+      "calories": 120,
+      "protein": 18,
+      "fat": 3,
+      "carbs": 6
+    },
+    "bruschetta": {
+      "calories": 109,
+      "protein": 3,
+      "fat": 5,
+      "carbs": 13
+    },
+    "hummus": {
+      "calories": 166,
+      "protein": 8,
+      "fat": 10,
+      "carbs": 14
+    },
+    "guacamole": {
+      "calories": 150,
+      "protein": 2,
+      "fat": 14,
+      "carbs": 8
+    },
+    "fish_and_chips": {
+      "calories": 585,
+      "protein": 25,
+      "fat": 34,
+      "carbs": 44
+    },
+    "chicken_curry": {
+      "calories": 250,
+      "protein": 18,
+      "fat": 15,
+      "carbs": 12
+    },
+    "steak": {
+      "calories": 271,
+      "protein": 25,
+      "fat": 19,
+      "carbs": 0
+    },
+    "pork_chop": {
+      "calories": 231,
+      "protein": 23,
+      "fat": 15,
+      "carbs": 0
+    },
+    "lobster_bisque": {
+      "calories": 200,
+      "protein": 8,
+      "fat": 15,
+      "carbs": 8
+    },
+    "scallops": {
+      "calories": 137,
+      "protein": 24,
+      "fat": 2,
+      "carbs": 6
+    },
+    "oysters": {
+      "calories": 68,
+      "protein": 7,
+      "fat": 2,
+      "carbs": 4
+    },
+    "red_velvet_cake": {
+      "calories": 478,
+      "protein": 5,
+      "fat": 21,
+      "carbs": 68
+    },
+    "carrot_cake": {
+      "calories": 435,
+      "protein": 5,
+      "fat": 21,
+      "carbs": 58
+    },
+    "bread_pudding": {
+      "calories": 310,
+      "protein": 7,
+      "fat": 13,
+      "carbs": 42
+    }
+  }
+}
