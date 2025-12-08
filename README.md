@@ -73,7 +73,7 @@ repo-root/
 
 ### Recommended: Run in Google Colab
 
-1. Open `Team4_FinalProject.ipynb` in Colab. If the notebook mounts Google Drive, grant access so that datasets and outputs are saved there.
+1. Open `AAI521_team4_FinalProject.ipynb` in Colab. If the notebook mounts Google Drive, grant access so that datasets and outputs are saved there.
 2. Make sure the notebook cells that download the Kaggle Food-101 dataset are executed. The notebook includes a helper (e.g. `kagglehub.dataset_download('dansbecker/food-101')`) — ensure Kaggle credentials are configured if required.
 3. Execute all cells. The notebook will:
 
