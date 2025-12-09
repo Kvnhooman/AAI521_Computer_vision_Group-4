@@ -5,16 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NutriScan AI | Food Calorie Estimator</title>
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
-
-    <!-- TensorFlow.js -->
+    <!-- Load TensorFlow.js -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@latest"></script>
+    <!-- Fallback model for demo if custom model isn't present -->
 </head>
 
 <body>
@@ -41,19 +39,12 @@
                 <h1>Know Your Food,<br> <span class="text-gradient">Track Your Health.</span></h1>
                 <p class="subtitle">Upload a photo of your meal and let our AI identify the dish and estimate its
                     calories instantly.</p>
-
-                <!-- Status Indicator -->
-                <div id="status-message" class="status-pill loading">
-                    <span class="status-dot"></span> Loading AI Model...
-                </div>
             </section>
 
             <section class="upload-section">
-                <!-- Drop Zone -->
                 <div class="glass-card upload-card" id="drop-zone">
                     <input type="file" id="file-input" accept="image/*" hidden>
-
-                    <div class="upload-content text-center">
+                    <div class="upload-content" id="upload-content">
                         <div class="upload-icon">
                             <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -67,37 +58,32 @@
                         <button class="btn-primary" onclick="document.getElementById('file-input').click()">Choose
                             File</button>
                     </div>
-                </div>
 
-                <!-- Preview Area -->
-                <div id="preview-section" class="glass-card hidden">
-                    <div class="preview-container">
+                    <div class="preview-container hidden" id="preview-container">
                         <img id="image-preview" src="" alt="Food Preview">
-                        <button class="close-btn" id="reset-btn">×</button>
+                        <button class="close-btn" id="remove-image">×</button>
                         <div class="scan-overlay hidden" id="scan-overlay">
                             <div class="scan-line"></div>
                         </div>
                     </div>
-                    <button id="scan-btn" class="btn-primary full-width mt-4">Identify Dish</button>
                 </div>
 
-                <!-- Results Area -->
-                <div id="result-section" class="glass-card result-card hidden">
+                <div class="glass-card result-card hidden" id="result-card">
                     <div class="result-header">
                         <h2>Analysis Result</h2>
-                        <span class="confidence-badge" id="pred-conf">--%</span>
+                        <span class="confidence-badge" id="confidence-badge">98% Match</span>
                     </div>
 
                     <div class="food-info">
                         <div class="food-name-container">
                             <span class="label">Detected Dish</span>
-                            <h3 id="pred-class">--</h3>
+                            <h3 id="food-name">Loading...</h3>
                         </div>
 
                         <div class="calorie-container">
                             <span class="label">Est. Calories</span>
                             <div class="calorie-value">
-                                <span class="number" id="pred-cal">--</span>
+                                <span class="number" id="calorie-count">--</span>
                                 <span class="unit">kcal</span>
                             </div>
                             <p class="serving-note">per serving</p>
@@ -108,23 +94,21 @@
                         <div class="nutrient">
                             <span class="dot protein"></span>
                             <span>Protein</span>
-                            <span class="val" id="nut-prot">0g</span>
+                            <span class="val">~</span>
                         </div>
                         <div class="nutrient">
                             <span class="dot carbs"></span>
                             <span>Carbs</span>
-                            <span class="val" id="nut-carb">0g</span>
+                            <span class="val">~</span>
                         </div>
                         <div class="nutrient">
                             <span class="dot fat"></span>
                             <span>Fat</span>
-                            <span class="val" id="nut-fat">0g</span>
+                            <span class="val">~</span>
                         </div>
                     </div>
 
-
-
-                    <button class="btn-secondary full-width mt-4" id="scan-again">Scan Another</button>
+                    <button class="btn-secondary" id="scan-again">Scan Another</button>
                 </div>
             </section>
         </main>
